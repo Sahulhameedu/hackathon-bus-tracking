@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+*{
+    font-family: 'Poppins', Courier, monospace;
+}
+:root{
+    --black:rgb(14, 94, 111);
+    --light:rgb(255, 239, 214);
+    --darkpink:rgba(255, 173, 22, 0.932);
+    --skyb:rgb(58, 136, 145);
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-image: url('/images/loggy\ in.jpg');
+    
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* .landing{
+   
+    background-image: url('/images/snow-img/1.png'),url('/images/snow-img/2.png'),url('/images/snow-img/3.png');
+    height: 80vh;
+    animation:nooo 20s linear infinite;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    width: 99vw;
+    
+  
+} */
+.landing{
+    height: 100vh;
+}
+@keyframes nooo {
+    0%{
+        background-position: 0 0,0 0,0 0;
+    }
+    100%{
+        background-position: 500px 1000px,400px 400px,300px 300px;
+    }
+}
+.landing header{
+    display:flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.navi a:hover{
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+    
+}
+
+.title {
+    text-decoration: none;
+    flex:1;
+  padding: 1em;
+    font-size: 1.3em;
+    font-weight: 550;
+    animation:blink 5s linear infinite;
+color: #0e3742;
+outline: none;
+}
+
+
+@keyframes blink {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,93%{
+        color:#0e3742;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,93.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+}
+
+ 
+.title a{
+    text-decoration: none;
+   padding: 1em;
+    color: var(--darkb);
+}
+.title{
+    min-width: 238px;
+}
+
+
+.navi {
+    
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: var(--darkb);
+    font-size: 1.2em;
+    animation:bulb 4s linear forwards;
+    color: #0e3742;
+    outline: none;
+
+}
+
+
+@keyframes bulb {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,93%{
+        color:#0e3742;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,93.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+
+    
+}
+
+
+.navi a{
+    text-decoration: none;
+    color: var(--darkb);
+    top:0;
+    left:-100%;
+    width: 100%;
+    height:7vh;
+   
+    transition: 0.5s;
+    animation: wave 1s linear infinite;
+
+}
+
+
+@keyframes wave {
+    
+    0%{
+        left:-100%;
+    }
+    50%,100%{
+        left:100%;
+    }
+}
+
+
+.navi a{
+    flex:1;
+    padding: 1em;
+}
+
+/* 
+.para{
+    margin: auto;
+color: #fff;
+display: flex;
+flex-direction: column;
+font-size: 2em;
+padding-left: 1em;
+height: 80vh;
+justify-content: center;
+text-shadow: 0 0 160px #03bcf4;
+animation:paraa 5s linear forwards;
+} */
+.para{
+    padding: 30px;
+    /* margin-top: 100px; */
+    margin: 50px auto auto auto;
+    width: 50%;
+    height: 50%;
+    font-size: 2em ;
+    background-color: rgba(170, 170, 170, 0.751);
+    color: #0004ff;
+    border: 4px solid rgb(0, 0, 0);
+    height: fit-content;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 40px;
+}
+.para button{
+    margin: auto;
+}
+@keyframes paraa {
+  
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,93.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 60px #03bcf4,
+        0 0 80px  #03bcf4,
+        0 0 120px #03bcf4;
+    }
+}
+
+
+
+#scream{
+    background-image: url('/');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#order{
+    background-image: url();
+}
+
+
+#button{
+    justify-items: center;
+    align-items: center;
+    width:30vw;
+    border-radius: 10px;
+    color: var(--light);
+    background-color: var(--darkpink);
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    animation:ordernow 5s linear forwards;
+    margin-top: 0.5em;
+}
+@keyframes ordernow {
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,93.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 60px #03bcf4,
+        0 0 80px  #03bcf4,
+        0 0 120px #03bcf4;
+    }
+}
+
+
+a:hover{
+    color: blue;
+}
+#menu{
+    width:130px;
+    text-align: center;
+    
+}
+#home{
+    width: 150px;
+    text-align: center;
+}
+ 
+#help{
+  text-align: center;
+}
+.follow{
+    animation:bulb 4s linear forwards;
+    color: #fff;
+    text-shadow: 0 0 160px #03bcf4;
+    font-size: 22px;
+    position: relative;
+    
+}
+
+@keyframes bulb {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,93%{
+        color:#0e3742;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,93.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+    
+}
+footer{
+    border:5px solid black;
+    background-color: black;
+ 
+}
+.facebook{
+    transition: upp 0.5s linear forwards;
+    font-size: 40px;
+    width: 50px;
+    height: 52px;
+    border-radius: 50%;
+    text-shadow: 0 0 160px #03bcf4;
+animation:paraa 5s linear forwards; 
+
+    
+}
+.instagram{
+    transition: upp 0.5s linear forwards;
+    font-size: 42px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    text-shadow: 0 0 160px #03bcf4;
+    animation:paraa 5s linear forwards; 
+
+ 
+}
+
+.twitter{
+    padding-right: 10px;
+    padding-left: 3px;
+    font-size: 42px;
+    width: 36px;
+    height: 56px;
+    text-align: center;
+    transition: upp 0.5s linear forwards;
+    border-radius: 50%;
+    text-shadow: 0 0 160px #03bcf4;
+    animation:paraa 5s linear forwards; 
+   
+
+}
+.youtube{
+    transition: upp 0.5s linear forwards;
+    font-size: 45px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    text-shadow: 0 0 160px #03bcf4;
+    animation:paraa 5s linear forwards; 
+ 
+    
+}
+.facebook:hover{
+    transform: translate(0,-10%);
+    background-color: #3b5998;
+}
+.instagram:hover{
+    transform: translate(0,-15%);
+    background:linear-gradient(45deg,#e95950,#fbad50,#fccc63,#bc2a8d,#cd486b,#8a3ab9);
+}
+.twitter:hover{
+    transform: translate(0,-10%);
+    background-color: #00acee;
+
+}
+.youtube:hover{
+    transform: translate(0,-10%);
+    background-color: red;
+   
+}
+
+#you:hover{
+    position: relative;
+    color: white;
+    background-color: red;
+}
+footer{
+    display: flex;
+}
+.follow{
+    flex: 1;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.facebook{
+    padding-left: 5px;
+    flex: 1;
+    position: relative;
+    right: 1em;
+    top: 5px;
+}
+.instagram{
+    position: relative;
+    right: 0.8em;
+    top: 8px;
+   padding-bottom: 3px;
+}
+.youtube{
+    position: relative;
+    right: 0.6em;
+    bottom: 0.1em;
+    padding: 3px 0px 4px 8px;
+    top: 5px;
+}
+.twitter{
+    position: relative;
+    bottom: 2px;
+    right: 0.5em;
+    top: 4px;
+}
+#face{
+    position: relative;
+    left: 3px;
+    top: 7px;
+}
+#ins{
+    position: relative;
+    top: 4px;
+}
+#twit{
+    position: relative;
+    left: 3px;
+    top: 8px;
+}
+#foll{
+    position: relative;
+    left: 1.6em;
+    font-size: 24px;
+    font-weight: 600;
+}
+#you{
+    position: relative;
+    top: 2px;
+    text-align: center;
+}
+#icee{
+    /* background-image: url('/images/'); */
+    
+    background-position: center;
+    background-size: cover;
+   
+    background-color: #000000;
+    width: 160px;
+    
+}
+#order{
+    text-transform: uppercase;
+}
+#scream{
+    text-transform: uppercase;
+}

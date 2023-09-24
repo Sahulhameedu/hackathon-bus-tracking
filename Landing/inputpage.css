@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', Courier, monospace;
+}
+
+body{
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+    background-image: url(../images/BG.jpg);
+    background:no-repeat  cover;
+    background-size: cover;
+    background-position: 10% 60%;
+    width: 100vw;
+    height: 100vh  ;
+    /* overflow: hidden; */
+}
+a{
+    text-decoration: none;
+}
+/* img{
+    display: flex;
+    width: 100%;
+} */
+.nav_title{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: black;
+    color: white;
+    padding: 0px 20px 0px 20px;
+}
+.nav_title p{
+    padding: 20px;
+    font-size: large;
+}
+nav{
+
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    gap: 0rem;
+    /* margin-bottom: 1rem; */
+}
+.nav_style{
+    list-style: none;
+    display: flex  ;
+    align-items: center;
+    /* padding: 2rem; */
+    gap: 2rem;
+}
+.link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+main{
+    width: 100vw;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+}
+main .inputbox{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* width: 50%; */
+}
+main div h2{
+    color: black;
+    background-color: #727272b2;
+    padding: 5px 10px 5px 10px;
+    border: solid 4px ;
+    border-radius: 10px;
+    text-align: center;
+    
+   
+}
+
+.buttonbox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.buttonbox  button{
+    /* padding: 20px; */
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #727272b2;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+.buttonbox div:nth-child(4){
+    /* grid-column-end:5 ; */
+    margin: auto;
+}
+.details{
+    margin: 0px auto auto auto auto;
+    /* padding: 50px; */
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.details-box{
+    background-color: #727272b2;
+    /* margin: 30px; */
+    /* margin-top: 30px; */
+    padding: 30px;
+    text-align: start;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.driver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0px 20px 20px 20px;
+}
+.details h1{
+    color: #ffffff;
+    font-weight: 600px;
+}
+.driver img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 2px rgb(32, 161, 32);
+    padding:2px;
+}
+.track-btn {
+    padding: 10px 20px;
+    margin: 30px 0px 0px 0px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    font-size: medium;
+}
+td{
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.map{
+    width: auto;
+    margin: auto;
+    border: solid 3px #0e3742;
+    display: none;
+}
+footer{
+    border:5px solid black;
+    background-color: black;
+}
+.follow{
+    flex: 1;
+    animation:bulb 4s linear forwards;
+    color: #0e3742;
+    outline: none;
+}
+#foll{
+  
+    animation:bulb 4s linear forwards;
+    color: #0e3742;
+    outline: none;
+    position: relative;
+    top: 1em;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+}
+.facebook{
+    padding-left: 5px;
+    flex: 1;
+    position: relative;
+    right: 1em;
+    top: 1px;
+  
+   
+}
+.instagram{
+    position: relative;
+    right: 0.7em;
+    top: 3px;
+    padding-bottom: 5px;
+}
+.youtube{
+    position: relative;
+    right: 0.5em;
+    bottom: 0.1em;
+    padding: 0px 0px 8px 10px;
+}
+.twitter{
+    position: relative;
+    bottom: 2px;
+    top: 1px;
+    right: 0.5em;
+}
+#face{
+    position: relative;
+    left: 3px;
+    top:1px;
+    bottom:1em;
+}
+#ins{
+    position: relative;
+    bottom: 1px;
+}
+#twit{
+    position: relative;
+    left: 3px;
+   
+}
+#foll{
+    position: relative;
+    left: 1.6em;
+    width: 200px;
+}
+#you{
+    position: relative;
+  bottom: 3px;
+    text-align: center;
+}

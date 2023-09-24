@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus tracking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type ="text/css">
+    <link rel="stylesheet" href="./inputpage.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_title">
+            <i class="fa-solid fa-bus"></i>
+            <p>Bus tracking</p>
+        </div>
+        <ul class="nav_style">
+            <li><a class="link" href="#"><i class="fa-solid fa-house"></i> SIGNUP|LOGIN</a></li>
+            <li><a class="link" href="#"><i class="fa-solid fa-bars"></i> ABOUT US</a></li>
+            <li><a class="link" href="#"><i class="fa-solid fa-handshake-angle"></i> HELP</a></li>
+        </ul>
+        <!-- <button class="btn">Click here</button> -->
+    </nav>
+    <main class="main-class">
+        <div class="inputbox" >
+            <h2>ENTER BUS NUMBER</h2>
+            <div class="buttonbox">
+                <button class="one" value=1>1</button> <button class="two" value=2>2</button> <button class="three" value=3>3</button>
+                <button class="four" value=4>4</button> <button class="five" value=5>5</button> <button class="six" value=6>6</button>
+                <button class="seven" value=7>7</button> <button class="eight" value=8>8</button> <button class="nine" value=9>9</button>
+                <p></p><button class="ten" value=10 >10</button>
+            </div>
+        </div>
+        <div class="details" style="display: none;" >
+            <h1>BUS DETAILS</h1>
+            <div class="details-box">
+                
+                <div class="driver">
+                    <img src="./pexels-pixabay-220453.jpg" alt="" class="driver-image">
+                    <h2>BUS NO: <span >4</span></h2>
+                </div>
+                <div>
+                   <table>
+                        <tr>
+                            <td>NAME</td>
+                            <td>:</td>
+                            <td class="drivername"></td>
+                        </tr>
+                        <tr>
+                            <td>REGISTRATION</td>
+                            <td>:</td>
+                            <td class="registration"></td>
+                        </tr>
+                        <tr>
+                            <td>FROM</td>
+                            <td>:</td>
+                            <td class="from"></td>
+                        </tr>
+                        <tr>
+                            <td>TO</td>
+                            <td>:</td>
+                            <td class="to"></td>
+                        </tr>
+                   </table>
+                </div>
+                <button class="track-btn">Track here</button>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15698.974164883793!2d77.96945790000001!3d10.3623792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00aa57a54881e3%3A0x765a14068982e6e7!2sDindigul%2C%20Tamil%20Nadu%20624001!5e0!3m2!1sen!2sin!4v1695560608705!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="follow" > 
+           <p id="foll"> Follow Us On :</p>
+        </div>
+        <div class="social">
+                <div class="facebook"><i id="face" class="fa-brands fa-facebook"></i></div>
+                <div class="instagram"> <i id="ins" class="fa-brands fa-instagram"></i></div>
+                <div class="youtube"> <i  id="you" class="fa-brands fa-square-youtube"></i></div>
+                <div class="twitter"> <i  id="twit" class="fa-brands fa-square-twitter"></i>  </div>  
+        </div>
+     </footer> -->
+     <script src="./index.js"></script>
+</body>
+</html>
